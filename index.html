@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Voting App - HSI Boarding School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="badge">XI - HSI Boarding School</span>
+            <h1>🚀 Choose Our Next Coding Project!</h1>
+            <p class="subtitle">Pilih project yang paling ingin kamu buat di semester ini.</p>
+        </header>
+
+        <!-- Current Winner Banner (Bonus Level 2) -->
+        <div class="winner-box" id="winnerBox">
+            <span class="winner-title">🏆 CURRENT WINNER</span>
+            <div id="winnerText" class="winner-name">Belum ada suara</div>
+        </div>
+
+        <!-- Notification / Feedback (Req #9 & Bonus Level 6) -->
+        <div id="feedback" class="feedback-msg hidden"></div>
+
+        <!-- Voting Cards Grid (Req #2, #3) -->
+        <div class="cards-grid">
+            <!-- Candidate 1 -->
+            <div class="card">
+                <div class="icon">🎮</div>
+                <h3>Mini Game 2D</h3>
+                <p class="vote-count"><span id="votesCard1">0</span> Votes</p>
+                
+                <!-- Progress Bar (Bonus Level 4) -->
+                <div class="progress-bg">
+                    <div id="progress1" class="progress-fill" style="width: 0%;"></div>
+                </div>
+                <div id="percent1" class="percent-text">0%</div>
+
+                <button class="btn-vote" id="btn1">Vote Game</button>
+            </div>
+
+            <!-- Candidate 2 -->
+            <div class="card">
+                <div class="icon">🛒</div>
+                <h3>E-Commerce Store</h3>
+                <p class="vote-count"><span id="votesCard2">0</span> Votes</p>
+
+                <div class="progress-bg">
+                    <div id="progress2" class="progress-fill" style="width: 0%;"></div>
+                </div>
+                <div id="percent2" class="percent-text">0%</div>
+
+                <button class="btn-vote" id="btn2">Vote Store</button>
+            </div>
+
+            <!-- Candidate 3 -->
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Task Manager</h3>
+                <p class="vote-count"><span id="votesCard3">0</span> Votes</p>
+
+                <div class="progress-bg">
+                    <div id="progress3" class="progress-fill" style="width: 0%;"></div>
+                </div>
+                <div id="percent3" class="percent-text">0%</div>
+
+                <button class="btn-vote" id="btn3">Vote Task App</button>
+            </div>
+
+            <!-- Candidate 4 -->
+            <div class="card">
+                <div class="icon">🧠</div>
+                <h3>Quiz Master</h3>
+                <p class="vote-count"><span id="votesCard4">0</span> Votes</p>
+
+                <div class="progress-bg">
+                    <div id="progress4" class="progress-fill" style="width: 0%;"></div>
+                </div>
+                <div id="percent4" class="percent-text">0%</div>
+
+                <button class="btn-vote" id="btn4">Vote Quiz App</button>
+            </div>
+        </div>
+
+        <!-- Footer Info & Controls -->
+        <div class="dashboard-footer">
+            <div class="total-box">
+                Total Votes: <strong id="totalVotes">0</strong>
+            </div>
+
+            <!-- Reset Button (Bonus Level 1) -->
+            <button id="resetBtn" class="btn-reset">🔄 Reset Voting</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
